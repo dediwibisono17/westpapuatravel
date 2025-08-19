@@ -402,7 +402,40 @@ section {
 .info-detail {
     // padding: 8px;
     .detail-paket {
-        padding: 8px;
+        &.yesx {
+            padding: 8px;
+
+            ul {
+                margin: 0 16px;
+                ;
+
+                li {
+                    &::before {
+                        content: "\f058";
+                        font-family: "Font Awesome 5 Pro";
+                        float: inline-start;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        &.nox {
+            ul {
+
+                margin: 0 16px;
+            }
+
+            li {
+                &::before {
+                    content: "\f00d";
+                    font-family: "Font Awesome 5 Pro";
+                    float: inline-start;
+                    margin-right: 16px;
+                }
+            }
+        }
+
     }
     .titlex {
         h4 {
